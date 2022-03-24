@@ -15,6 +15,7 @@ class CreateRestaurantImagesTable extends Migration
     {
         Schema::create('restaurant__images', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->bigInteger('image')->unsigned()->nullable();
             $table->timestamps();
         });
     }
