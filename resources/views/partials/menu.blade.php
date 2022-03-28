@@ -53,7 +53,7 @@
                 </li>
             @endcan
             <li>
-                <a href="#" onclick="">
+                <a href="{{route('restaurant.create')}}" onclick="">
                     Restaurant
                 </a>
             </li>

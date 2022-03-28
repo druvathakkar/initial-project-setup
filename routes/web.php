@@ -20,4 +20,10 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::delete('users/destroy', 'UsersController@massDestroy')->name('users.massDestroy');
 
     Route::resource('users', 'UsersController');
+
+});
+
+Route::group(['namespace'=>'Restaurant'],function(){
+    Route::resource('restaurant','RestaurantController');
+    
 });
